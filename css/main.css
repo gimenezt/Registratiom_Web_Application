@@ -1,0 +1,59 @@
+:root {
+    font-size: 10px;
+    --heading-height: 20rem;
+}
+
+div{
+    padding-bottom: 10px;
+}
+
+
+body{
+    
+    font-family: "Century Gothic", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #C3D9E2;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: calc(1em + 3vw);
+    font-weight: 720;
+    padding-left: 3rem;
+    text-shadow: .022em .022em .022em #111;
+    color: #fff;
+}
+
+h2 {
+    font-size: calc(1em + 1vw);;
+    font-weight: 700;
+    text-shadow: .022em .022em .022em #111;
+    color: #37414F;
+} 
+
+h3{
+    font-size: calc(1em + 0.5vw);;
+    font-weight: 700;
+    color: #404749;
+    background-color: #d1e5ee;
+    border-radius:90px;
+    text-align: center;
+}
+
+p {
+    font-size: calc(1em + 0.5vw);
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: #37414F;
+}
+
+label{
+    font-size: calc(1em + 0.3vw);
+    font-weight: 550;
+    letter-spacing: .01em;
+    color: #5B696F;
+    justify-content: flex-end;
+    left: 15%;
+}

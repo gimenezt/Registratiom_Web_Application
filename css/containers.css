@@ -1,0 +1,30 @@
+.container{
+    padding-bottom: 200px;
+    padding-left: 5%;
+    display:flex;
+    flex-direction: row;
+}
+
+.sub_container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+
+.container_title{
+    padding-top: 170px;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container_actions{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    width: 25%;
+    background-color: #abc5ce;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 30px;
+}

@@ -1,0 +1,20 @@
+header {
+	position: absolute;
+	width: 100%;
+	height: var(--heading-height);
+}
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: flex;
+	position: absolute;
+	left: 0;
+	bottom: 30%;
+	width: 100%;
+	height: var(--heading-height);
+	z-index: -1;
+	background-color: #076389;
+	background-size: cover;
+    
+}
