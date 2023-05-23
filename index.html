@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<!-- Linguagem da pagina -->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel = "stylesheet" type = "text/css" href = "css/main.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/button.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/campo.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/header.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/containers.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/modal.css">
+      
+        <!-- JavaScript -->
+
+        <script src="JS/node_cliente.js" defer></script>
+        <script src="JS/node_fornecedor.js" defer></script>
+        <script src="JS/fila.js" defer></script>
+        <script src="JS/pilha.js" defer></script>
+        <script src="JS/main.js" defer></script>
+        <script src="JS/modal.js" defer></script>
+
+        <!-- Nome da pagina -->
+        <title>Neo Roman</title>
+    </head>
+    
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1>Neo Roman</h1>
+        </header>
+
+        <!-- CONTAINER DE TITULO DA PÁGINA -->
+        <div class = "container_title">
+            
+            <h2>Seja bem-vindo(a)!</h2>
+        
+        </div>
+
+        <!-- CONTAINER DE FORMUÃRIO -->
+        <div class = "container">
+        
+            <!-- CADASTRO CLIENTE -->
+            <div>
+                <h2 id="titulo">Cadastro de Cliente</h2>
+                <p id="subtitulo">Insira seus dados:</p>
+                <br>
+    
+                <form id = "formulario_cliente">
+                    <!-- INPUT NOME -->
+                    <div>
+
+                        <div>
+                            <label>Nome</label>
+                        </div>
+                        
+                        <input class="input" type="text" name="nome" id="nome" placeholder="Digite" required>
+
+                    </div>
+                    
+                    <!-- INPUT SOBRENOME -->
+                    <div>
+                        <div>
+                            <label>Sobrenome</label>
+                        </div>
+                        <input class="input"type="text" name="sobrenome" id="sobrenome" placeholder="Digite"> 
+                    </div>
+                    
+                    <!-- INPUT CPF -->
+                    <div>
+                        <div>
+                            <label>CPF</label>
+                        </div>
+                        <input class="input" type="cpf" name="cpf"id="cpf" placeholder="Digite"required> 
+                    </div>
+                    
+                    <!-- INPUT E-MAIL -->
+                    <div>
+                        <div>
+                            <label>E-mail</label>
+                        </div>
+                        <input class="input"  type="email" name="email" id="email"placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT TELEFONE -->
+                    <div>
+                        <div>
+                            <label>Telefone</label>
+                        </div>
+                        <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite"required> 
+                    </div>
+                    <br>
+                </form>
+                    <!-- INPUT BOTÃO DE CADASTRO -->
+                    <div>
+                        <button class="button" id="btn_cliente">Enviar</button>
+                    </div>
+            </div>
+        
+
+            <!-- CADASTRO FORNECEDOR -->
+            <div class = "sub_container">
+                <h2 id="titulo">Cadastro de Fornecedor</h2>
+                <p id="subtitulo">Insira seus dados:</p>
+                <br>
+                
+                <form id = "formulario_forn">
+                    <!-- INPUT NOME FANTASIA -->
+                    <div>
+                        <div>
+                            <label>Nome Fantasia</label>
+                        </div>
+                        <input class="input"  type="nomeFantasia", name="nomeFantasia", id="nomeFantasia" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT RAZÃO SOCIAL -->
+                    <div>
+                        <div>
+                            <label>Razão Social</label>
+                        </div>
+                        <input class="input" type="razaoSocial" name="razaoSocial" id="razaoSocial" placeholder="Digite"required> 
+                    </div>
+                    
+                    <!-- INPUT CNPJ -->
+                    <div>
+                        <div>
+                            <label>CNPJ</label>
+                        </div>
+                        <input class="input" type="text" name="cnpj" id="cnpj" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT E-MAIL -->
+                    <div>
+                        <div>
+                            <label>E-mail</label>
+                        </div>
+                        <input class="input"  type="email" name="email" id="emailforn" placeholder="Digite"required>
+                    </div>
+                    
+                    <!-- INPUT TELEFONE -->
+                    <div>
+                        <div>
+                            <label>Telefone</label>
+                        </div>
+                        <input class="input" type="text" name="telefone" id="telefoneforn" placeholder="Digite"required>
+                    </div>
+                    <br>
+                </form>
+                    <!-- BOTÃO DE CADASTRO -->
+                    <div>
+                        <button class="button" id="btn_forn">Enviar</button>
+                    </div>
+            </div>
+            
+            <div class="container_actions" style="align-self: center;">
+
+                <div class="container_title" style = "padding-top: 0px; padding-left: 0px;">
+
+                    <h2>Tabela de Ações</h2>
+
+                </div>
+
+                <h3>CLIENTE</h3>
+
+                <div style = "display: flex; justify-content: center;">
+
+                    <button id="open_modal_cliente" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
+                    
+                    <button id="remover_cliente" type="button" class="button" style="width: 50%;background-color: #8f2f2f">REMOVER</button>
+
+                </div>
+
+                <h3 style="margin-top: 8%;">FORNCEDOR</h3>
+
+                <div div style = "display: flex; justify-content: center;">
+
+                    <button id="open_modal_fornecedor" type="button" style= "margin-right: 2%;width: 50%; background-color: #59814c;" class="button">Imprimir</button>
+
+                    <button id="remover_fornecedor" type="button" class="button" style="width: 50%;background-color: #8f2f2f;">REMOVER</button>
+
+                </div>
+            </div>
+
+            <!-- Fade para focar no modal -->
+            <div id="fade" class="hide"></div>
+
+            <!-- modal para imprimir a pilha e a fila -->
+            <div id="modal" class="hide">
+
+                <!-- Header do modal -->
+                <div class="modal_header">
+                    <!-- Texto da header -->
+                    <h1 id="print_header">Print</h1>
+
+                    <!-- Botão para fechar o modal -->
+                    <button id="close_modal" class="button" style="background-color: #8f2f2f;">Fechar</button>
+                </div>
+
+                <!-- Corpo do modal -->
+                <div class="modal_body">
+                    <p id="print">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
